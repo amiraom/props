@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import BasicExample from './components/nav';
+import Photo from './components/photo';
+import TextExample from './components/description';
+import TextExample2 from './components/parag';
+import Elements from './components/elements';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundColor:'#7A7A7A'}}>
+   
+
+      <div className='nav1'><BasicExample/></div>
+      <div className='partie1'>
+     <div className='description'><TextExample/></div><div className='photo1'><Photo/></div></div>
+     <div className='partie2'>
+      <div className='services'><TextExample2/></div>
+
+    </div >
+    <div style={{height:'400px'}}><Elements/></div>
     </div>
   );
 }
